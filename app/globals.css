@@ -1,0 +1,30 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 font-pretendard;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-sky-400;
+  }
+
+  .bg-glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .bg-glass-dark {
+    @apply bg-black/30 backdrop-blur-md border border-white/10;
+  }
+}
